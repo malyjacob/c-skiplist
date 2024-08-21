@@ -1,0 +1,7 @@
+.vscode
+build
+
+/c-skiplist/**
+!/c-skiplist/*.sln
+!/c-skiplist/*.filters
+!/c-skiplist/*.vcxproj

@@ -6,6 +6,12 @@
 
 int seeded = 0;
 
+#ifdef _MSC_VER
+#define random rand
+#define strdup _strdup
+#endif // _MSC_VER
+
+
 void sl_free_entry(sl_entry * entry);
 
 // TODO have void functions (especially sl_set) return error codes and do proper

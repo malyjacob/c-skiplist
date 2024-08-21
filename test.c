@@ -9,6 +9,10 @@
 #include <string.h>
 #include <stdio.h>
 
+#ifdef _MSC_VER
+#define sprintf(buff, fmt, ...) sprintf_s(buff, sizeof(buff), fmt, __VA_ARGS__)
+#endif // _MSC_VER
+
 // Simply runs all the test functions
 int main() {
     int err;
